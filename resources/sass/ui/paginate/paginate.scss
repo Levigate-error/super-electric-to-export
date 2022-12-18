@@ -1,0 +1,88 @@
+.legweb-paginate-wrapper {
+    ul {
+        list-style: none;
+    }
+}
+
+.legweb-paginate-break {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.legweb-paginate-break-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.legweb-paginate-page {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 12px;
+}
+
+.legweb-paginate-page-link {
+    color: $black;
+    &:hover {
+        color: $accent;
+        cursor: pointer;
+    }
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.legweb-paginate-active {
+    color: $accent;
+}
+
+.legweb-paginate-active-link {
+    color: $accent;
+    &:hover {
+        color: $accent-dark;
+        cursor: pointer;
+    }
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.legweb-paginate-prev {
+    display: inline-block;
+}
+
+.legweb-paginate-next {
+    display: inline-block;
+}
+
+.legweb-paginate-prev-link {
+    color: $accent;
+    &:hover {
+        color: $accent-dark;
+        cursor: pointer;
+    }
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.legweb-paginate-next-link {
+    color: $accent;
+    &:hover {
+        color: $accent-dark;
+        cursor: pointer;
+    }
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.legweb-paginate-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}

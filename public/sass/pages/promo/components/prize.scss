@@ -1,0 +1,127 @@
+.promo-prize {
+    padding: 100px 100px 50px 100px;
+    font-family: Raleway;
+    background-color: #4fa5d5;
+    color: $white;
+
+    @media (max-width: 992px) {
+        padding: 56px 20px;
+    }
+
+    &__title {
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 42px;
+        color: $white;
+
+        @media (max-width: 992px) {
+            font-size: 30px;
+            line-height: 35px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 30px;
+        line-height: 35px;
+        max-width: 800px;
+        margin-bottom: 66px;
+
+        @media (max-width: 992px) {
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        @media (max-width: 1080px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+
+    .prize-card {
+        padding: 38px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        @media (max-width: 1080px) {
+            &:nth-child(even) {
+                background-color: #a4cde3;
+            }
+        }
+        @media (min-width: 1080px) {
+            &:nth-child(2),
+            &:nth-child(3) {
+                background-color: #a4cde3;
+            }
+        }
+
+        @media (max-width: 992px) {
+            margin: 0px -20px;
+        }
+
+        &__month {
+            font-size: 30px;
+            line-height: 35px;
+
+            @media (max-width: 992px) {
+                font-size: 20px;
+                line-height: 23px;
+            }
+        }
+
+        &__img {
+            display: flex;
+            align-items: center;
+
+            img {
+                max-width: 100%;
+                flex-shrink: 1;
+            }
+
+            span {
+                margin: 0px 30px;
+                font-weight: 100;
+                font-size: 60px;
+                line-height: 22px;
+
+                @media (max-width: 992px) {
+                    margin: 0px 14px;
+                }
+            }
+        }
+
+        &__desc {
+            font-weight: 500;
+            font-size: 21px;
+            line-height: 30px;
+            text-align: center;
+
+            @media (max-width: 992px) {
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    &__mark {
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 21px;
+        max-width: 533px;
+
+        @media (max-width: 992px) {
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+}

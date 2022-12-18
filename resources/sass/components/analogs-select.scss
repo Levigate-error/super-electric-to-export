@@ -1,0 +1,306 @@
+.get-analog-wrpapper {
+    max-height: 80vh;
+    overflow: hidden;
+    overflow-y: auto;
+
+    .search-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .legrand-input {
+            margin-right: 10px;
+        }
+    }
+
+    .project-input-wrapper {
+        width: 70px;
+    }
+
+    .current-product-wrapper {
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .product-error {
+        color: $accent;
+    }
+
+    .refresh-wrapper {
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+
+    .analog-wrapper {
+        text-align: left;
+    }
+
+    .analog-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .analog-img {
+        width: 150px;
+    }
+
+    .analog-name {
+        margin-bottom: 20px;
+    }
+
+    .analog-info {
+        margin-left: 20px;
+    }
+
+    .analog-description {
+        display: block;
+    }
+    .analog-article {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .analog-cost {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .fetch-analog-failure {
+        display: block;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .select-analog-projects-wrapper {
+        margin-top: 20px;
+    }
+
+    .select-analog-ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+
+    .select-analog-li {
+        text-align: left;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 50px;
+        padding-top: 5px;
+    }
+
+    .ui-checkbox {
+        position: absolute;
+        top: 18px;
+    }
+
+    .project-name {
+        margin-left: 25px;
+        margin-top: 8px;
+        display: block;
+    }
+
+    .select-analog-actions {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .projects-fetch-failure {
+        display: block;
+        color: $accent;
+        margin-top: 20px;
+    }
+}
+
+.selection-analog-wrapper {
+    padding: 0 75px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .selection-analog-wrapper {
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+.selection-analog-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 26px;
+}
+.selection-analog-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 24px;
+    text-align: center;
+}
+.selection-analog-article-input {
+    margin-top: 22px !important;
+}
+.selection-analog-get-analog-btn {
+    margin-top: 21px;
+    padding: 9px 50px;
+}
+.selection-analog-find-error {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 24px;
+    color: $light-text;
+}
+
+.selection-analog-detail-wrapper {
+}
+.selection-analog-product {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.selection-analog-image-wrapper {
+    width: 140px;
+}
+.selection-analog-image {
+    position: relative;
+    width: 140px;
+}
+.selection-analog-info {
+    max-width: 330px;
+    padding-left: 20px;
+}
+.selection-analog-info-title {
+    color: $accent;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+.selection-analog-info-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 18px;
+}
+.selection-analog-info-details {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.selection-analog-auth-message {
+    margin-top: 18px;
+}
+.selection-analog-auth-btns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 18px;
+
+    .legrand-btn {
+        width: 170px;
+    }
+}
+
+.selection-analog-projects-preloader-wrapper {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.selection-analog-projects-preloader {
+    position: relative;
+    font-size: 32px;
+}
+
+.selection-analog-projects-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.selection-analog-projects-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 8px 0;
+    border-bottom: 1px solid $input-border;
+    height: 50px;
+
+    &:last-child {
+        border-bottom: none !important;
+    }
+
+    .checkmark {
+        margin-top: 11px;
+    }
+}
+
+.selection-analog-projects-list-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    overflow: hidden;
+    padding-top: 8px;
+    margin-left: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 20px;
+    flex: 1;
+}
+.selection-analog-projects-list-count {
+    width: 50px;
+}
+
+.selection-analog-add-product-wrapper {
+    text-align: center;
+    padding-top: 24px;
+}
+.selection-analog-add-product-btn {
+    padding: 8px 55px;
+}
+
+.selection-analog-add-product-error {
+    text-align: center;
+    padding: 20px 0;
+    color: $accent;
+}
+
+.selection-analog-projects-list-input {
+    width: 60px;
+}
+
+.selection-analog-projects-select-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: $black;
+    display: block;
+    margin-top: 24px;
+}

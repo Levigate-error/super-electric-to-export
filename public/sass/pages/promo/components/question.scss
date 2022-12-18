@@ -1,0 +1,104 @@
+.promo-question {
+    background-color: #337ea8;
+    height: 1000px;
+    position: relative;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+        padding: 50px 20px;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    &__img {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        max-width: 100%;
+        height: 100%;
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    &__title {
+        margin-top: 175px;
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $white;
+        align-self: start;
+
+        @media (max-width: 1200px) {
+            margin: 0px 0px 55px 0px;
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+
+    .promo-accordion {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 2;
+
+        &__btn {
+            position: relative;
+            background-color: $white;
+            padding: 28px 60px 28px 28px;
+            text-align: left;
+            border-radius: 3px;
+            font-size: 24px;
+            line-height: 28px;
+
+            @media (max-width: 1200px) {
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: ' ';
+                background-color: $red;
+                height: 2px;
+                width: 40px;
+                top: 50%;
+                right: 20px;
+                transition: transform 0.3s ease-in-out;
+            }
+            &::before {
+                transform: rotate(90deg);
+            }
+        }
+
+        &__btn.active {
+            &::before {
+                transform: rotate(135deg);
+            }
+            &::after {
+                transform: rotate(45deg);
+            }
+        }
+
+        &__panel {
+            padding: 0px 28px;
+            background-color: $white;
+            overflow: hidden;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            margin-top: -2px;
+            margin-bottom: 6px;
+            max-height: 0px;
+            transition: max-height 0.4s ease-in-out;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+}

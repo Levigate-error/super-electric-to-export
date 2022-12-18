@@ -1,0 +1,16 @@
+.add-item-btn-wrapper {
+    .ant-btn-link {
+        color: $accent;
+
+        i {
+            font-size: 18px;
+            vertical-align: baseline;
+        }
+        &:hover {
+            color: $accent;
+        }
+        &:active {
+            color: $accent-dark;
+        }
+    }
+}

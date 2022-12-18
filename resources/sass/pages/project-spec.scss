@@ -1,0 +1,244 @@
+.project-spec-list {
+    padding-bottom: 80px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .project-spec-list-li {
+        background-color: $white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+        color: $dark-text;
+        border: 1px solid $input-border;
+        border-top: 0;
+        font-size: 12px;
+        position: relative;
+
+        .project-spec-list-name {
+            height: 100%;
+            width: 100%;
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .spec-list-name-link {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: inline-block;
+            height: 100%;
+            padding-top: 14px;
+            width: calc(100% - 40px);
+        }
+
+        &:first-child {
+            border-top: 1px solid $input-border;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid $input-border;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: $accent;
+        }
+    }
+}
+
+.draggble-table-row {
+    display: table-row;
+    cursor: pointer;
+    background-color: $white;
+    height: 40px;
+    vertical-align: middle;
+    font-size: 12px;
+
+    input {
+        font-size: 12px;
+    }
+
+    td {
+        padding: 16px;
+    }
+
+    &:hover {
+        background-color: $card-bg;
+    }
+}
+
+.proj-spec-add-wrapper {
+    margin-top: 20px;
+}
+
+.spec-table-wrapper {
+    &.spec-table-wrapper-loading {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    .ant-table-thead > tr > th,
+    .ant-table-tbody > tr > td {
+        padding: 6px;
+    }
+
+    .ant-table-tbody > tr > td {
+        white-space: normal;
+    }
+}
+
+.spec-tables-wrapper {
+    display: grid;
+    width: calc(100% + 5px);
+    overflow-x: auto;
+}
+
+.spec-table-name-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.spec-table-check-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .ui-checkbox .checkmark {
+        top: -6px;
+    }
+}
+
+.add-product-to-spec-row {
+    display: flex;
+    padding: 10px 0 40px 0;
+
+    .legrand-input {
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .legrand-input-controls-wrapper {
+        margin-top: -18px;
+    }
+    .ant-select-search__field__mirror {
+        overflow: hidden;
+        width: 100px;
+    }
+
+    .global-search {
+        .ant-input {
+            border-color: $input-border;
+            border-radius: 0;
+            height: 40px;
+            font-size: 12px;
+
+            &:hover {
+                border-color: $input-border;
+            }
+
+            &:focus {
+                outline: none;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                border-color: $input-border;
+            }
+        }
+        .ant-input-suffix {
+            pointer-events: none;
+        }
+        .ant-btn {
+            background-color: $white;
+            border-radius: 0;
+            color: $dark-text;
+            border-color: $input-border;
+            color: $light-text;
+        }
+    }
+}
+
+.add-product-to-spec-vendor-code {
+    color: $light-text;
+    font-size: 12px;
+}
+.add-product-to-spec-name {
+    color: $dark-text;
+    font-size: 12px;
+    padding-left: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.loading-section {
+    pointer-events: none;
+    opacity: 0.1;
+}
+
+.spec-list-icon {
+    width: 48px;
+    height: 48px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+
+    &:hover {
+        path {
+            fill: $accent;
+        }
+    }
+}
+
+.upload-download-spec-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .icon-control {
+        font-size: 24px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}
+
+.spec-total-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid $input-border;
+    border-bottom: 1px solid $input-border;
+    margin-top: 20px;
+
+    .spec-total-summ-text {
+        font-size: 16px;
+    }
+
+    .spec-total-summ {
+        font-size: 16px;
+    }
+}
+
+.spec-context-menu-btn {
+    background: none;
+}
+.spec-context-menu-item {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.draggble-table-row {
+    cursor: move;
+}

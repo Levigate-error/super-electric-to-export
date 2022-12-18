@@ -1,0 +1,60 @@
+.loyalty-modal {
+    &__input {
+        display: none;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $accent-dark;
+        border-radius: 4px;
+        color: $black;
+        font-weight: 700;
+        height: 40px;
+        width: 180px;
+
+        &:hover {
+            background-color: $accent-dark;
+            color: $white;
+        }
+
+        img {
+            margin-right: 10px;
+        }
+    }
+    &__btn--red {
+        border: 0px;
+        color: $white;
+        background-color: $accent;
+        width: 118px;
+    }
+    &__btn--whatsapp {
+        border: 0px;
+        color: $white;
+        background-color: #31ba46;
+
+        &:hover {
+            background-color: #31ba46;
+            opacity: 0.7;
+        }
+    }
+    &__btn--tg {
+        border: 0px;
+        color: $white;
+        background-color: #4fa5d5;
+
+        &:hover {
+            background-color: #4fa5d5;
+            opacity: 0.7;
+        }
+    }
+    &__link {
+        font-size: 16px;
+        color: $accent;
+
+        &:hover {
+            color: $accent-dark;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.auth-modal-click-wrapper {
+    cursor: pointer;
+    * {
+        pointer-events: none;
+    }
+}
+
+.auth-modal-wrapper {
+    padding-top: 30px;
+
+    .form-group {
+        margin-bottom: 5px !important;
+    }
+
+    .login-btn-wrapper {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    label {
+        width: 100%;
+    }
+}
+
+.auth-modal-btns {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    button {
+        margin: 5px;
+    }
+}
+
+.auth-modal-header {
+    text-align: center;
+    display: inline-block;
+}
+
+.modal-content {
+    border: none;
+}
+
+.form-error-msg {
+    color: $accent;
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+}

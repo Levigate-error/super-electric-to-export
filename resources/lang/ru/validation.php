@@ -1,0 +1,93 @@
+<?php
+
+return [
+    'exception' => [
+        'message' => 'Ошибка валидации.',
+        'csrf_token_mismatch' => 'Перезагрузите страницу для входа.',
+    ],
+    'custom' => [
+        'file' => [
+            'required' => 'Файл обязателен.',
+            'max' => ':attribute должен быть менее :max килобайт.',
+        ],
+        'amount' => [
+            'min' => 'Поле :attribute должно быть от 0 до 999.',
+            'max' => 'Поле :attribute должно быть от 0 до 999.',
+        ],
+        'discount' => [
+            'min' => 'Поле :attribute должно быть от 0 до 100',
+            'max' => 'Поле :attribute должно быть от 0 до 100',
+        ],
+        'personal_site' => [
+            'max' => 'Поле :attribute должно быть иметь не больше :max символов',
+        ],
+        'receipts.*' => [
+            'max' => 'Файл чека не должен превышать размер :max килобайт',
+        ],
+        'receipts' => [
+            'max' => ':attribute не должно быть больше :max',
+        ]
+
+    ],
+    'attributes' => [
+        'file' => 'Файл',
+        'title' => 'Заголовок',
+        'product' => 'Товар',
+        'section' => 'Раздел',
+        'amount' => 'Кол-ство',
+        'active' => 'Активно',
+        'discount' => 'Скидка',
+        'section_to' => 'Раздел приемник',
+        'section_from' => 'Раздел источник',
+        'password' => 'Пароль',
+        'change_id' => 'Изменение',
+        'vendor_code' => 'Артикул',
+        'first_name' => 'Имя',
+        'last_name' => 'Фамилия',
+        'personal_site' => 'Сайт или страница в соц. сетях',
+        'email_subscription' => 'Согласен получать рассылки на эл.почту',
+        'city' => 'Город',
+        'phone' => 'Телефон',
+        'current_password' => 'Текущий пароль',
+        'new_password' => 'Новый пароль',
+        'personal_data_agreement' => 'Согласие на обработку персональных данных',
+        'code' => 'Код',
+        'loyalty_id' => 'Акция',
+        'text' => 'Текст',
+        'name' => 'Имя',
+        'city_id' => 'Город',
+        'photo' => 'Фото',
+        'published' => 'Опубликовано',
+        'user_loyalties' => 'Регистрация в программе лояльности',
+        'email' => 'E-mail адрес',
+        'type' => 'Тип',
+        'g-recaptcha-response' => 'Captcha',
+        'questions' => 'Вопросы',
+        'sort_column' => 'Поле сортировки',
+        'sort_type' => 'Вид сортировки',
+        'receipts.*' => 'Чек',
+        'receipts' => 'Чеков',
+    ],
+    'mimes' => ':attribute должен быть: :values.',
+    'required' => 'Поле :attribute обязательное.',
+    'string' => 'Поле :attribute должно быть строкой.',
+    'exists' => 'Поле :attribute не корректно.',
+    'boolean' => 'Поле :attribute должно быть 1 или 0.',
+    'integer' => 'Поле :attribute должно быть целым числом.',
+    'confirmed' => 'Повторение :attribute не совпадает.',
+    'current_password' => 'Значение :attribute не корректно.',
+    'accepted' => ':attribute необходимо принять.',
+    'min' => [
+        'string' => ':attribute должен быть не меньше :min символов.',
+    ],
+    'max' => [
+        'string' => ':attribute должен быть не больше :max символов.',
+    ],
+    'unique' => ':attribute уже занято.',
+    'email' => 'Поле :attribute должно быть корректным e-mail адресом.',
+    'image' => 'Поле :attribute должно быть изображением.',
+    'must_set_in_profile' => 'необходимо заполнить в Вашем профиле.',
+    'recaptcha' => 'Ключ капчи не валиден.',
+    'file' => 'Поле :attribute должно быть файлом.',
+    'in' => 'Поле :attribute не корректно.',
+];

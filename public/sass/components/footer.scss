@@ -1,0 +1,38 @@
+footer {
+    background-color: $black;
+    padding-bottom: 20px;
+    @media only screen and (max-width: 768px) {
+        .logo-wrapper {
+            text-align: left;
+        }
+    }
+}
+
+footer .container {
+    color: $white;
+
+    a {
+        font-size: 12px;
+        color: $white;
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.legrand-footer-text-btn {
+    padding: 0;
+    color: $white;
+    text-align: left;
+    font-size: 12px;
+}
+
+.footer-logo-link {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+
+    .footer-logo-svg {
+        pointer-events: none;
+    }
+}

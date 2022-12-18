@@ -1,0 +1,205 @@
+.test-detail-wrapper {
+    padding-bottom: 80px;
+
+    .test-title {
+        text-align: center;
+    }
+
+    .test-page-start-description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .test-page-start-button-wrapper {
+        margin-top: 40px !important;
+        text-align: center;
+    }
+    .test-page-start-button {
+        display: inline;
+    }
+
+    .test-wrapper {
+    }
+
+    .test-page-wrapper {
+    }
+
+    .test-page-end-description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .test-end-result {
+        font-style: normal;
+        color: $black;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .test-end-result-correct {
+        color: $accent;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .test-bonus-points {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+        padding-top: 24px;
+        color: $black;
+    }
+
+    .test-bonus-points-accent {
+        color: $accent;
+    }
+
+    .test-end-text-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: $black;
+        text-align: center;
+        padding-bottom: 24px;
+        border-bottom: 1px solid $input-border;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .test-end-text-description {
+        font-style: normal;
+        font-size: 14px;
+        color: $black;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .test-result-preloader-wrapper {
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .test-result-preloader {
+        font-size: 36px;
+    }
+
+    .test-page-end-button-wrapper {
+        margin-top: 40px !important;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .test-page-end-button {
+        display: inline;
+    }
+
+    .test-page-image-wrapper {
+        max-height: 280px;
+        min-height: 60px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .test-page-image-counter {
+        color: $white;
+        background-color: $accent;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 20px 11px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .test-page-image {
+        width: 100%;
+    }
+
+    .test-page-question-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .answers-wrapper {
+        padding: 20px 0;
+        border-bottom: 1px solid $input-border;
+
+        &:last-child {
+            border: none;
+        }
+    }
+}
+.test-checkbox {
+    height: auto !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+}
+.test-checkmark {
+    margin-top: 3px !important;
+}
+.test-checkbox-correct {
+    color: $green !important;
+    pointer-events: none;
+}
+.test-radio-checkmark-correct {
+    background-color: $green !important;
+}
+.test-checkbox-wrong {
+    color: $accent !important;
+    pointer-events: none;
+}
+.test-radio-checkmark-wrong {
+    background-color: $accent !important;
+}
+.test-checkbox-disabled {
+    color: $lightest-text !important;
+    pointer-events: none;
+}
+.test-radio-checkmark-disabled {
+    background-color: $lightest-text !important;
+}
+
+.test-detail-page-preloader-wrapper {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.test-detail-page-preloader {
+    font-size: 36px;
+}
+
+.test-detail-anser-row-detail {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: $black;
+    margin-top: 10px;
+}

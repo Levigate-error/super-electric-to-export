@@ -1,0 +1,79 @@
+.legrand-btn {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    border-radius: 4px;
+    color: $white;
+
+    padding: 8px 10px;
+    white-space: nowrap;
+    align-items: center;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.legrand-btn-small {
+    font-size: 10px;
+    padding: 0 4px;
+}
+
+.legrand-btn-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.btn-accent {
+    background-color: $accent;
+
+    &.active {
+        background-color: $accent-dark;
+    }
+
+    &:hover {
+        background-color: $accent-dark;
+        color: $white;
+    }
+}
+.btn-second {
+    background-color: $second;
+
+    &.active {
+        background-color: $second-dark;
+    }
+
+    &:hover {
+        background-color: $second-dark;
+    }
+}
+.btn-bordered {
+    border: 1px solid $input-border;
+    color: $black;
+
+    &.active {
+        border: 1px solid $accent;
+        color: $accent;
+    }
+
+    &:hover {
+        border: 1px solid $accent;
+        color: $accent;
+    }
+}
+
+.nav-btn {
+    color: $white;
+    text-transform: capitalize;
+    margin-left: 10px;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.legrand-btn-loading-icon {
+    margin-left: 10px;
+    vertical-align: middle;
+}

@@ -1,0 +1,12 @@
+.ant-tabs-tab {
+    &:hover {
+        color: $black !important;
+    }
+    &.ant-tabs-tab-active {
+        color: $black;
+    }
+}
+
+.ant-tabs-ink-bar {
+    background-color: $accent;
+}

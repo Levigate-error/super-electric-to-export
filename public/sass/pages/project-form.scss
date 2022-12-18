@@ -1,0 +1,48 @@
+.general-information {
+    padding-bottom: 80px;
+
+    .contact-row-wrapepr {
+        display: flex;
+        flex-direction: row;
+
+        .legrand-input-wrapper {
+            margin: 5px;
+        }
+
+        .legrand-input-wrapper:first-child {
+            margin-left: 0;
+        }
+
+        .legrand-input-wrapper:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .input-group-text {
+        display: inline-block;
+        width: 35px;
+        padding: 0;
+    }
+
+    .input-icon-btn {
+        position: relative;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        min-width: 32px;
+        line-height: 0;
+
+        .anticon-close {
+            pointer-events: none;
+        }
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            color: $accent;
+            cursor: pointer;
+        }
+    }
+}

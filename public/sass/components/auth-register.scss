@@ -1,0 +1,42 @@
+.auth-register-input-row {
+    text-align: center;
+}
+.auth-register-info-message {
+    color: $accent;
+    text-align: center;
+    display: block !important;
+    margin-top: 10px;
+}
+
+.auth-register-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.auth-register-confirm {
+    text-align: center;
+    margin-top: 20px;
+}
+.auth-register-modal-title {
+    margin-top: 25px;
+    text-align: center;
+}
+.auth-register-reset-info {
+    text-align: center;
+}
+
+.auth-register-error-text-wrapper {
+    padding: 10px;
+    color: $black;
+    font-size: 14px;
+    text-align: center;
+
+    a {
+        color: $accent;
+
+        &:hover {
+            color: $accent-dark;
+        }
+    }
+}

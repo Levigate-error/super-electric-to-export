@@ -1,0 +1,175 @@
+.navbar-wrapper {
+    height: 80px;
+    background-color: $white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+
+    .super-electrician-logo {
+        max-width: 100%;
+    }
+
+    &.vertical-orientation {
+        height: auto;
+        padding: 15px 20px;
+
+        .menu-colapse-icon {
+            top: 10px;
+        }
+    }
+}
+
+.navbar-name-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70px;
+    display: table-cell;
+}
+
+.navbar-wrapper .menu-colapse-icon {
+    display: none;
+}
+
+.menu-subitem:hover {
+    color: $accent !important;
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected > a {
+    color: $black !important;
+}
+
+.ant-menu-item:hover,
+.ant-menu-submenu:hover,
+.ant-menu-item-active,
+.ant-menu-submenu-active,
+.ant-menu-item-open,
+.ant-menu-submenu-open,
+.ant-menu-submenu-selected {
+    color: $accent !important;
+
+    .navbar-link:hover {
+        color: $accent !important;
+    }
+}
+
+.ant-menu-item-active {
+    color: $black;
+}
+
+.ant-menu-item-selected {
+    color: $black;
+}
+
+.legrand-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+    .menu-colapse-icon {
+        position: absolute;
+        right: 0;
+        font-size: 34px;
+    }
+
+    &.vertical-orientation {
+        flex-direction: column;
+    }
+
+    .ant-menu {
+        border: none;
+        background: none;
+
+        .ant-menu-item,
+        .ant-menu-submenu-title {
+            padding: 0px;
+            background: none !important;
+            vertical-align: baseline;
+        }
+
+        .ant-menu-submenu-arrow {
+            display: none;
+        }
+
+        .ant-menu-submenu-title {
+            margin: 0 10px;
+        }
+
+        li {
+            border-bottom-color: $white !important;
+        }
+
+        li:hover {
+            color: $accent;
+        }
+
+        a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: $accent;
+        }
+
+        .ant-menu-item:hover,
+        .ant-menu-item-active,
+        .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+        .ant-menu-submenu-active,
+        .ant-menu-submenu-title:hover {
+            color: $accent !important;
+        }
+
+        .btn-accent {
+            color: $white;
+            margin: 0 5px;
+        }
+
+        .btn-second {
+            color: $white;
+            margin: 0 5px;
+        }
+
+        .btn-accent:hover {
+            color: $white !important;
+        }
+
+        .btn-second:hover {
+            color: $white !important;
+        }
+    }
+
+    .with-icon-title-wrapper i {
+        margin-left: 10px;
+        position: relative;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+}
+
+.legrand-navbar {
+    .btn-second {
+        font-size: 12px;
+    }
+
+    .btn-accent {
+        font-size: 12px;
+    }
+}
+
+.navbar-brand {
+    margin-right: 10px;
+}
+
+.with-icon-title-wrapper .anticon {
+    margin-right: 0;
+}
+
+@media (max-width: 992px) {
+    .navbar-wrapper .menu-colapse-icon {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,24 @@
+// Favorites marker
+.favorites-marker {
+    background: none;
+    border-radius: 20px;
+    padding: 0;
+    cursor: pointer;
+
+    &:disabled {
+        cursor: default;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.favorite-active {
+    circle {
+        fill: $accent;
+    }
+
+    path {
+        fill: $white;
+    }
+}

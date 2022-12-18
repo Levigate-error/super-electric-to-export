@@ -1,0 +1,76 @@
+.legrand-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    position: relative;
+
+    .legrand-input-labels {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &.with-label {
+        margin-top: 18px;
+    }
+
+    .label-wrapper {
+        font-size: 10px;
+        padding: 0 0 5px 0;
+    }
+
+    .label-error {
+        color: $accent;
+        font-size: 10px;
+        padding: 0 0 5px 0;
+    }
+}
+
+.legrand-input-disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+.legrand-input-password {
+    -webkit-text-security: disc;
+    text-security: disc;
+}
+
+.form-control {
+    border-color: $input-border;
+
+    &.legrand-input {
+        border-radius: 0;
+        font-size: 12px;
+    }
+
+    &:focus {
+        border-color: $input-border;
+    }
+}
+.legrand-input-append {
+    background-color: $white;
+
+    .input-group-text {
+        font-size: 12px;
+        height: 32px;
+        border-color: $input-border;
+        border-radius: 0;
+        background: none;
+    }
+}
+
+.legrand-input-append-icon-btn:hover {
+    cursor: pointer;
+    i {
+        color: $accent;
+    }
+}
+
+.legrand-input-controls-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

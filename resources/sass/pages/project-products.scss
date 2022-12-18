@@ -1,0 +1,480 @@
+.added-products-wrapper {
+    padding-bottom: 80px;
+
+    width: 100%;
+
+    .division-item {
+        border: 1px solid $input-border;
+        margin: 0 20px 20px 0;
+        height: 255px;
+        float: left;
+        width: 255px;
+        position: relative;
+        display: inline-flex;
+        -webkit-transition: 0.3s -webkit-filter linear;
+        -moz-transition: 0.3s -moz-filter linear;
+        -moz-transition: 0.3s filter linear;
+        -ms-transition: 0.3s -ms-filter linear;
+        -o-transition: 0.3s -o-filter linear;
+        transition: 0.3s filter linear, 0.3s -webkit-filter linear;
+    }
+    .division-item:hover {
+        filter: brightness(1.05);
+        cursor: pointer;
+    }
+
+    .products-title-row {
+        width: 100%;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .show-as-row-btn {
+        position: relative;
+        float: right;
+        font-size: 20px;
+    }
+
+    .add-btn-wrapper {
+        height: 60px;
+        padding: 10px 0;
+    }
+
+    .division-name {
+        color: $black;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        height: 75px;
+        left: 0;
+        text-align: center;
+        bottom: 0;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .division-amount {
+        background: $accent;
+        color: $white;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+// SHOW AS GRID
+
+.products-container-gird {
+    position: relative;
+    width: calc(100% + 15px);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    clear: both;
+
+    .product-wrapper {
+        position: relative;
+        margin-bottom: 30px;
+        width: 33%;
+
+        .product-count {
+            display: inline-block;
+            width: 60px;
+        }
+
+        .lds-spinner {
+            transform: scale(0.5);
+            position: absolute;
+            bottom: -22px;
+            right: 0px;
+        }
+    }
+
+    .catalog-product-cost {
+        display: block;
+        font-weight: bold;
+        text-align: right;
+        margin: 5px 17px 5px 0;
+        position: absolute;
+        top: 230px;
+        right: 0;
+    }
+
+    .product-grid-btn {
+        width: calc(100% - 15px);
+    }
+
+    .product {
+        width: calc(100% - 15px);
+        height: calc(100% - 30px);
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        .product-title {
+            white-space: nowrap;
+            overflow: hidden;
+            width: 100%;
+            text-overflow: ellipsis;
+            display: inline-block;
+        }
+
+        .delete-button-wrapper {
+            position: absolute;
+            top: 0px;
+            right: 13px;
+            font-size: 24px;
+        }
+
+        .delete-button-wrapper:hover {
+            color: $accent;
+        }
+
+        .product-vendor-code {
+            display: block;
+            font-size: 10px !important;
+            padding-top: 10px;
+            line-height: 14px;
+            color: $light-text;
+        }
+
+        .product-params {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        .product-param-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 10px;
+            color: $black;
+            border-bottom: 1px solid $gray-light;
+
+            span:last-child {
+                align-self: flex-end;
+            }
+        }
+        .product-price {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+        }
+    }
+
+    .product-photo {
+        width: 100%;
+        height: 200px;
+        display: inline-block;
+        text-align: center;
+
+        img {
+            display: block;
+            max-width: 100%;
+            max-height: 200px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .products-container-gird {
+        .product-wrapper {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .products-container-gird {
+        .product-wrapper {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .products-container-gird {
+        .product-wrapper {
+            width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .products-container-gird {
+        .product-wrapper {
+            width: 33.333%;
+        }
+    }
+}
+
+// SHOW AS ROWS
+
+.products-container-rows {
+    position: relative;
+    width: calc(100% + 15px);
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    clear: both;
+
+    .product-wrapper {
+        position: relative;
+        width: 100%;
+
+        .product-count {
+            width: 90px;
+            position: absolute;
+            left: 215px;
+            bottom: -5px;
+        }
+
+        &:nth-child(n + 2) {
+            margin-top: 20px;
+        }
+
+        .lds-spinner {
+            transform: scale(0.5);
+            position: absolute;
+            bottom: -17px;
+            left: 310px;
+        }
+    }
+
+    .catalog-product-cost {
+        display: grid;
+        text-align: right;
+        padding-bottom: 10px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .product-row-btn {
+        float: right;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .product {
+        margin: 0;
+        padding: 0;
+        display: inline;
+        .product-title {
+            width: calc(100% - 300px);
+            display: inline-block;
+        }
+
+        .delete-button-wrapper {
+            position: absolute;
+            top: 0px;
+            right: 13px;
+            font-size: 24px;
+        }
+
+        .delete-button-wrapper:hover {
+            color: $accent;
+        }
+
+        .product-vendor-code {
+            display: block;
+            font-size: 10px !important;
+            padding-top: 10px;
+            line-height: 14px;
+            color: $light-text;
+        }
+
+        .product-params {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            height: auto;
+            overflow: hidden;
+        }
+        .product-param-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 10px;
+            color: $black;
+            border-bottom: 1px solid $gray-light;
+
+            span:last-child {
+                align-self: flex-end;
+            }
+        }
+        .product-price {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: right;
+        }
+    }
+
+    .product-photo {
+        width: 200px;
+        height: 100%;
+        position: relative;
+        float: left;
+        margin-right: 15px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .products-container-rows {
+        .product-wrapper {
+            float: none;
+        }
+
+        .product-title {
+            display: inline-block;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .products-container-rows {
+        .product-wrapper {
+            width: 100%;
+        }
+    }
+}
+
+.add-division-product-btn {
+    circle {
+        transition: all 0.1s ease-in;
+        stroke: $white;
+    }
+
+    path {
+        transition: all 0.1s ease-in;
+        stroke: $white;
+    }
+}
+
+.add-product-product-btn {
+    circle {
+        transition: all 0.1s ease-in;
+        stroke: $white;
+    }
+
+    path {
+        transition: all 0.1s ease-in;
+        stroke: $white;
+    }
+}
+
+.prodict-item-add-wrapper {
+    border: 1px solid $input-border;
+    margin: 5px 15px 5px 5px;
+    height: 200px;
+    float: left;
+    width: 200px;
+    position: relative;
+    transition: 0.3s filter linear, 0.3s -webkit-filter linear;
+
+    display: flex;
+    justify-content: center;
+    transition: all 0.1s ease-in;
+    background-color: $input-border;
+
+    &:hover {
+        background-color: $white;
+        filter: brightness(1.05);
+        cursor: pointer;
+
+        circle {
+            stroke: $light-text;
+        }
+
+        path {
+            stroke: $light-text;
+        }
+    }
+}
+
+.division-item-add-wrapper {
+    display: flex;
+    justify-content: center;
+    transition: all 0.1s ease-in;
+    background-color: $input-border;
+
+    &:hover {
+        background-color: $white;
+        circle {
+            stroke: $light-text;
+        }
+
+        path {
+            stroke: $light-text;
+        }
+    }
+}
+.proj-products-list-item {
+    position: relative;
+    padding-right: 48px;
+
+    &:hover .proj-products-list-title {
+        color: $black;
+    }
+}
+
+.proj-products-list-title {
+    &:hover {
+        color: $accent !important;
+    }
+}
+.proj-products-list-icon {
+    width: 48px;
+    height: 48px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+
+    &:hover {
+        path {
+            fill: $accent;
+        }
+    }
+}
+
+.division-product-img-wrapper {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-top: -46px;
+        height: 150px;
+        width: 150px;
+    }
+}

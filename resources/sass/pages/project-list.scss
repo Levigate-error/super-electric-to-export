@@ -1,0 +1,38 @@
+.project-list-wrapper {
+    padding-bottom: 80px;
+
+    .legrand-grid {
+        .ant-table-tbody tr {
+            cursor: pointer;
+        }
+    }
+
+    .projects-list-summ-wrapper {
+        display: block;
+        text-align: right;
+    }
+
+    .projects-list-title {
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+
+.project-list-remove-wrapper {
+    text-align: center;
+    .remove-icon {
+        font-size: 14px;
+        vertical-align: baseline;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+
+.project-list-remove-btns-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

@@ -1,0 +1,46 @@
+.legrand-textarea-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    position: relative;
+
+    &.with-label {
+        margin-top: 30px;
+    }
+
+    .legrand-textarea-labels {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .label-wrapper {
+        font-size: 10px;
+        padding: 0 0 5px 0;
+    }
+
+    .legrand-textarea-error {
+        color: $accent;
+        font-size: 10px;
+        padding: 0 0 5px 0;
+    }
+
+    .legrand-textarea {
+        position: relative;
+        width: 100%;
+        border: 1px solid $input-border;
+        border-radius: 0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 10px;
+    }
+}
+
+.legrand-textarea-disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}

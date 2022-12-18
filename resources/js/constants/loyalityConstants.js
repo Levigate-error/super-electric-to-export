@@ -1,0 +1,1 @@
+export const loyalityProgramUri = 'https://legrand.ru/smart-home';

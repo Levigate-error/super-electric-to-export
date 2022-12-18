@@ -1,0 +1,100 @@
+.legrand-dropdown {
+    position: relative;
+}
+
+.input-section {
+    cursor: pointer;
+    background: $white;
+    color: $black;
+    height: 48px;
+    display: flex;
+    font-size: 12px;
+    padding-left: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 1px $input-border;
+
+    &.dropdown-disabled {
+        cursor: default;
+        pointer-events: none;
+        background: $gray-light;
+    }
+}
+.input-section .dropdown-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: calc(100% - 40px);
+}
+.input-section .dropdown-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+.input-section:hover .dropdown-icon {
+    color: $accent;
+}
+
+.dropdown-icon {
+    .lds-spinner {
+        transform: scale(0.5);
+    }
+}
+.dropdown-values {
+    position: absolute;
+    width: 100%;
+    background: $white;
+    color: $black;
+    z-index: 2;
+    max-height: 280px;
+    overflow-y: auto;
+    border-bottom: 1px solid $input-border;
+
+    &.values-hidden {
+        display: none;
+    }
+}
+.dropdown-values ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-left: solid 1px $input-border;
+    border-right: solid 1px $input-border;
+}
+.dropdown-values ul li {
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.dropdown-values ul li:hover {
+    cursor: pointer;
+    background-color: $gray-light;
+}
+
+.clear-icon {
+    height: 48px;
+    width: 48px;
+    padding: 15px 18px;
+
+    &:hover {
+        path {
+            fill: $accent;
+        }
+    }
+}
+
+.selected-dropdawn-value {
+    background-color: $gray-light;
+    color: $light-text;
+}

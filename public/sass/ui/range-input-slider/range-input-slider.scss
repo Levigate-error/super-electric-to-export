@@ -1,0 +1,34 @@
+.legweb-range-input-slider {
+    position: relative;
+
+    .ant-slider-handle {
+        height: 18px;
+        width: 18px;
+        border-radius: 9px;
+        border: none;
+        background-color: $accent;
+    }
+
+    .ant-slider-track {
+        background-color: $accent;
+    }
+
+    .ant-slider:hover .ant-slider-handle:not(.ant-tooltip-open) {
+        border-color: $accent !important;
+    }
+
+    .ant-slider-track:hover {
+        color: $accent !important;
+    }
+
+    .ant-slider-handle:hover {
+        background-color: $accent-dark;
+    }
+    .ant-slider-handle:focus {
+        box-shadow: none;
+    }
+}
+
+.ant-slider:hover .ant-slider-track {
+    background-color: $accent;
+}

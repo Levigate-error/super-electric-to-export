@@ -1,0 +1,178 @@
+.promo-info {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 318px 1fr 330px;
+    column-gap: 10%;
+
+    @media (max-width: 992px) {
+        grid-template-columns: 80% 18%;
+        grid-template-rows: 180px 1fr 273px;
+        column-gap: 2%;
+    }
+
+    &__title {
+        grid-column: 1/2;
+        padding: 0px 100px;
+
+        @media (max-width: 992px) {
+            padding: 0px 20px;
+        }
+        h1 {
+            margin-top: 120px;
+            font-size: 70px;
+            font-weight: 800;
+            text-transform: uppercase;
+
+            @media (max-width: 992px) {
+                margin-top: 40px;
+                font-size: 52px;
+            }
+        }
+        p {
+            text-transform: uppercase;
+            font-size: 25px;
+            letter-spacing: 0.05em;
+            font-weight: 400;
+            color: #4fa5d5;
+
+            @media (max-width: 992px) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__subtitle {
+        grid-row: 2/3;
+        grid-column: 1/3;
+
+        padding: 50px 100px 75px 100px;
+        background-color: #4fa5d5;
+
+        @media (max-width: 992px) {
+            padding: 35px 20px 28px 20px;
+        }
+        h2 {
+            max-width: 40%;
+            font-size: 60px;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            line-height: 70px;
+            color: $white;
+            text-transform: uppercase;
+
+            @media (max-width: 992px) {
+                font-size: 20px;
+                line-height: normal;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .info-desc {
+        display: flex;
+        @media (max-width: 1200px) {
+            display: block;
+        }
+
+        &__el {
+            margin-right: 50px;
+
+            @media (max-width: 1200px) {
+                margin-right: 0px;
+                margin-bottom: 30px;
+            }
+
+            span {
+                padding: 2px 10px 5px 10px;
+                border-radius: 50%;
+                background-color: $white;
+                color: #4fa5d5;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            div {
+                margin-top: 10px;
+                font-size: 21px;
+                line-height: 25px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: $white;
+
+                @media (max-width: 992px) {
+                    font-size: 20px;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    &__more {
+        grid-row: 3/4;
+        grid-column: 1/3;
+
+        padding: 54px 100px 0px 100px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35px;
+
+        p {
+            max-width: 700px;
+            color: $black;
+        }
+
+        @media (max-width: 992px) {
+            padding: 26px 20px;
+            font-size: 20px;
+            line-height: 23.48px;
+        }
+    }
+
+    &__button {
+        margin-top: 40px;
+        background-color: $accent;
+        border-radius: 3px;
+        color: $white;
+        padding: 25px 60px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        display: inline-block;
+
+        &:hover {
+            background-color: $accent-dark;
+            color: $white;
+        }
+
+        @media (max-width: 992px) {
+            display: block;
+            margin: 40px auto 0px auto;
+        }
+    }
+
+    &__img {
+        grid-column: 2/3;
+        grid-row: 1/4;
+        justify-self: end;
+        margin-right: 100px;
+        max-width: 100%;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__img--mobile {
+        display: none;
+
+        @media (max-width: 992px) {
+            display: block;
+            position: absolute;
+            right: 0px;
+        }
+    }
+}

@@ -1,0 +1,512 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:wght@100%3b400%3b700%3b800&display=swap');
+
+// Variables
+@import 'variables';
+
+// Normalize
+@import '~normalize-scss/sass/normalize';
+button {
+    outline: none;
+    border: none;
+}
+
+// Bootstrap
+@import '../css/bootstrap.min.css';
+
+// Icons
+@import '../css/font-awesome.min.css';
+
+// Slider
+@import 'node_modules/react-image-gallery/styles/scss/image-gallery.scss';
+
+// Antd
+@import '~antd/dist/antd.css';
+
+// Rodal
+@import './ui/rodal.css';
+
+// Components
+@import './components/upload-spec.scss';
+
+// Pages
+@import './pages/home.scss';
+@import './pages/catalog.scss';
+@import './pages/product.scss';
+@import './pages/project-form.scss';
+@import './pages/project-products.scss';
+@import './pages/project-spec.scss';
+@import './pages/project-list.scss';
+@import './pages/profile.scss';
+@import './pages/loyalty/loyalty.scss';
+@import './pages/loyality.scss';
+@import './pages/faq.scss';
+@import './pages/news-list.scss';
+@import './pages/news-detail.scss';
+@import './pages/test-list.scss';
+@import './pages/test-detail.scss';
+@import './pages/video-list.scss';
+@import './pages/promo/promo.scss';
+@import './pages/inspiria/inspiria.scss';
+
+// UI
+@import './ui/checkbox/checkbox.scss';
+@import './ui/button/button.scss';
+@import './ui/modal/modal.scss';
+@import './ui/favorites/favorites.scss';
+@import './ui/dropdown/dropdown.scss';
+@import './ui/input/input.scss';
+@import './ui/grid/grid.scss';
+@import './ui/spinner/spinner.scss';
+@import './ui/auth-modal/auth-modal.scss';
+@import './ui/tabs/tabs.scss';
+@import './ui/tab-links/tab-links.scss';
+@import './ui/add-item-btn/add-item-btn.scss';
+@import './ui/add-product/add-product.scss';
+@import './ui/phone-input/phone-input.scss';
+@import './ui/radio/radio.scss';
+@import './ui/paginate/paginate.scss';
+@import './ui/range-input-slider/range-input-slider.scss';
+@import './ui/textarea/textarea.scss';
+
+// Components
+@import './components/navbar.scss';
+@import './components/analogs-select.scss';
+@import './components/auth-register.scss';
+@import './components/footer.scss';
+@import './components/feedback.scss';
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('/OpenSans-Bold.ttf');
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+h2 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 28px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+}
+h4 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+a {
+    color: $black;
+
+    &:hover {
+        text-decoration: none;
+        color: $accent;
+    }
+}
+
+*:focus {
+    outline: none;
+}
+
+label {
+    margin: 0px;
+}
+
+button {
+    background: none;
+}
+
+#laravel-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: 'OpenSans';
+}
+
+#app {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.navbar-logo-wrapper {
+    width: 100%;
+}
+.navbar-logo {
+    max-width: 100%;
+}
+
+.navbar-laravel {
+    background-color: $white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .navbar-brand {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .nav-item {
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .nav-link {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: $black;
+        }
+
+        &:hover .nav-link {
+            color: $accent;
+        }
+    }
+
+    .nav-link {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .dropdown-menu {
+        margin-top: -1px;
+        border: none;
+        border-radius: 0;
+    }
+    .dropdown-item:hover {
+        background-color: $white;
+        color: $accent;
+    }
+
+    .dropdown:hover {
+        .dropdown-menu {
+            display: block;
+            box-shadow: 0px 4px 4px $gray-light;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-laravel {
+        .navbar-brand {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .nav-item {
+            display: inline-block;
+            padding: 5px 0;
+            height: auto;
+        }
+
+        .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown:hover {
+            .dropdown-menu {
+                box-shadow: none;
+            }
+        }
+
+        .nav-btn {
+            display: inline-block;
+            margin: 0px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.logo-wrapper {
+    padding-top: 10px;
+}
+
+#breadcrumbs {
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    background-color: $gray-light;
+}
+
+.breadcrumb {
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+    background-color: $gray-light;
+    border-radius: none !important;
+
+    li {
+        font-size: 16px;
+        padding-left: 10px;
+
+        &.active {
+            color: $accent;
+        }
+
+        &:after {
+            content: ' /';
+        }
+
+        &:first-child {
+            padding-left: 0px;
+        }
+
+        &:last-child {
+            &:after {
+                content: '';
+            }
+        }
+    }
+}
+
+.legrand-button {
+    background-color: $accent;
+    font-size: 12px;
+    border: none;
+
+    &:hover {
+        background-color: $accent-dark;
+    }
+}
+
+.legrand-text-btn {
+    background: none;
+    border: none;
+    color: $accent;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover,
+    :active {
+        color: $accent-dark;
+    }
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.selected-categories {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+        color: $dark-text;
+        border: 1px solid $input-border;
+        border-top: 0;
+        font-size: 12px;
+        padding-left: 10px;
+
+        &:first-child {
+            border-top: 1px solid $input-border;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid $input-border;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: $accent;
+        }
+    }
+}
+
+button:focus {
+    outline: none;
+}
+
+.ant-back-top-inner {
+    color: $white;
+    border-radius: 2px;
+    position: fixed;
+    bottom: 40px;
+    font-size: 32px;
+    right: 40px;
+    display: inline-block;
+    text-align: center;
+    height: 55px;
+    padding: 0;
+    width: 55px;
+    opacity: 0.4;
+    background-color: $dark;
+    transition-property: opacity, background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+
+    &:hover {
+        background-color: $accent;
+        opacity: 1;
+    }
+}
+
+.radio-input-wrapper {
+    .radio-input {
+        margin-right: 10px;
+        visibility: hidden;
+
+        &:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: $white;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 1px solid $input-border;
+        }
+
+        &:checked:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: $accent;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 1px solid $input-border;
+        }
+    }
+}
+
+.ant-modal-content {
+    border-radius: 0 !important;
+}
+
+.ant-table-row:hover {
+    td {
+        background-color: $card-bg !important;
+    }
+}
+
+.ant-spin-dot-item {
+    background-color: $accent;
+    border-radius: 0;
+}
+
+.ant-tooltip-arrow::before {
+    background-color: $white;
+}
+
+.ant-tooltip-inner {
+    padding: 10px;
+    background-color: $white;
+    color: $black;
+    border-radius: 0;
+}
+
+.ant-table-body {
+    overflow-x: auto !important;
+}
+
+.ant-table-column-title {
+    font-family: 'OpenSans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.ant-select-auto-complete.ant-select-lg .ant-input {
+    border-color: $input-border;
+    height: 32px;
+
+    &::placeholder {
+        font-size: 6px;
+        color: red !important;
+    }
+}
+
+.ant-select-auto-complete.ant-select,
+.ant-select-auto-complete.ant-select .ant-input:focus,
+.ant-select-auto-complete.ant-select .ant-input:hover {
+    border-color: $input-border;
+    height: 32px;
+}
+
+.ant-input::-webkit-input-placeholder {
+    color: red !important;
+}
+.ant-select-auto-complete.ant-select .ant-select-selection--single {
+    height: 30px;
+}
+
+.ant-select-auto-complete.ant-select-lg .ant-select-selection__rendered {
+    line-height: 32px;
+}
+
+.ant-menu-item-selected > a,
+.ant-menu-item-selected > a:hover {
+    color: $accent !important;
+}
+
+.ant-menu-item-active:hover {
+    .legweb-text-btn {
+        color: $accent;
+    }
+}
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+    border-right: none;
+}
+
+.video-icon {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+}

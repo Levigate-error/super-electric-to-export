@@ -1,0 +1,90 @@
+.profile-wrapper {
+    padding-bottom: 48px;
+
+    .category-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: $card-bg;
+        padding: 20px;
+    }
+
+    .profile-section {
+        margin-top: 48px;
+    }
+
+    .profile-rank {
+        color: $accent;
+    }
+}
+
+.profile-update-errors {
+    padding: 20px 0;
+}
+
+.profile-update-error {
+    color: $accent;
+    display: block;
+}
+
+.profile-category-icon-helper {
+    font-size: 16px;
+    vertical-align: baseline;
+    margin-left: 10px;
+}
+
+.profile-category-icon-helper-text {
+    color: $black;
+}
+
+.profile-photo-label {
+    color: $accent;
+    padding-bottom: 10px;
+    cursor: pointer;
+
+    &:hover {
+        color: $accent-dark;
+    }
+    .anticon {
+        font-size: 14px;
+        vertical-align: baseline;
+    }
+}
+.profile-photo-input {
+    display: none;
+}
+
+.profile-user-photo {
+    padding: 5px;
+    border: 1px solid $input-border;
+    max-width: 220px;
+    margin-bottom: 10px;
+}
+.profile-photo-error {
+    color: $accent;
+    margin-top: 5px;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.remove-btns-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 220px;
+    margin: 0 auto;
+}
+
+.profile-photo-row {
+    margin-top: 40px;
+}
+
+.remove-account-row {
+    margin-top: 60px;
+
+    .legrand-text-btn {
+        color: $light-text;
+        font-size: 12px;
+    }
+}

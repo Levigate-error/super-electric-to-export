@@ -1,0 +1,47 @@
+.promo-join {
+    padding: 180px 100px 150px 100px;
+
+    @media (max-width: 992px) {
+        padding: 72px 20px 55px 20px;
+    }
+
+    &__btn {
+        background-color: $accent;
+        border-radius: 3px;
+        color: $white;
+        padding: 25px 40px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        display: inline-block;
+
+        &:hover {
+            background-color: $accent-dark;
+            color: $white;
+        }
+    }
+
+    &__title {
+        font-size: 60px;
+        line-height: 70px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        @media (max-width: 992px) {
+            font-size: 30px;
+            line-height: 35px;
+        }
+    }
+
+    &__subtitle {
+        font-size: 21px;
+        line-height: 32px;
+        margin-bottom: 40px;
+
+        @media (max-width: 992px) {
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+}
