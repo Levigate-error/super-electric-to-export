@@ -6,7 +6,7 @@ import PageLayout from '../../components/PageLayout';
 import { createProject } from './api';
 import AnalogSelect from '../../components/SelectionAnalog';
 import Banner from './components/Banner';
-import PopUp from "../../ui/PopUp";
+// import PopUp from "../../ui/PopUp";
 
 interface IState {
     analogVisibility: boolean;
@@ -50,7 +50,10 @@ class Home extends React.Component<IHome, IState> {
                 userResource,
             },
         } = this.props;
-        const { analogVisibility, createRequest, popUplIsOpen } = this.state;
+        const { analogVisibility,
+            createRequest,
+            // popUplIsOpen
+        } = this.state;
 
         return (
             <div className="container mt-3 home-page-wrapper" key="container">
@@ -70,17 +73,17 @@ class Home extends React.Component<IHome, IState> {
                     </div>
                 </div>
 
-              <PopUp isOpen={popUplIsOpen} onClose={this.handleClosePopUp}>
-                <div className="loyalty__pop-up-container">
-                  <h1 className="mb-3 loyalty-modal__title loyalty__pop-up-title">АКЦИЯ ЛЕТО С LEGRAND ПРОДЛЕНА ДО 30.11.2022</h1>
-                  <p className="loyalty__pop-up-text">РАСШИРЕН АССОРТИМЕНТ УЧАСТВУЮЩЕЙ ПРОДУКЦИИ!
-                    Теперь в акции участвует продукция бренда BTicino. Если вы ещё не успели выиграть ценные призы, то этот шанс для вас!</p>
-                </div>
-              </PopUp>
+              {/*<PopUp isOpen={popUplIsOpen} onClose={this.handleClosePopUp}>*/}
+              {/*  <div className="loyalty__pop-up-container">*/}
+              {/*    <h1 className="mb-3 loyalty-modal__title loyalty__pop-up-title">АКЦИЯ ЛЕТО С LEGRAND ПРОДЛЕНА ДО 30.11.2022</h1>*/}
+              {/*    <p className="loyalty__pop-up-text">РАСШИРЕН АССОРТИМЕНТ УЧАСТВУЮЩЕЙ ПРОДУКЦИИ!*/}
+              {/*      Теперь в акции участвует продукция бренда BTicino. Если вы ещё не успели выиграть ценные призы, то этот шанс для вас!</p>*/}
+              {/*  </div>*/}
+              {/*</PopUp>*/}
 
-              <div className="b-marquee b-marquee--rtl">
-                <div className="b-marquee__text">АКЦИЯ ЛЕТО С LEGRAND ПРОДЛЕНА ДО 30.11.2022 И РАСШИРЕН АССОРТИМЕНТ УЧАСТВУЮЩЕЙ ПРОДУКЦИИ</div>
-              </div>
+              {/*<div className="b-marquee b-marquee--rtl">*/}
+              {/*  <div className="b-marquee__text">АКЦИЯ ЛЕТО С LEGRAND ПРОДЛЕНА ДО 30.11.2022 И РАСШИРЕН АССОРТИМЕНТ УЧАСТВУЮЩЕЙ ПРОДУКЦИИ</div>*/}
+              {/*</div>*/}
 
                 <div className="row mt-3">
                     {/*<div className="col-md-4">*/}
@@ -95,15 +98,17 @@ class Home extends React.Component<IHome, IState> {
                         {/*</a>*/}
                     {/*</div>*/}
                     <div className="col-md-8">
-                      <a href="/promo" className="card home-page-card mb-3 home-page-legrand">
+                      <div className="card home-page-card mb-3 home-page-legrand">
                         <div className="home-page-legrand__content">
-                          <div className="home-page-legrand__content-text home-page-legrand__content-text--large">ПРОДЛИ СВОЕ<br/> ЛЕТО<br/> С LEGRAND</div>
-                          <div className="home-page-legrand__content-text home-page-legrand__content-text--medium ">Покупай продукцию Legrand и BTicino<br/> и получи шанс выиграть ценные призы</div>
+                          <div className="home-page-legrand__content-text home-page-legrand__content-text--large">АКЦИЯ<br />
+                              «ЛЕТО С LEGRAND»<br />ЗАВЕРШЕНА!</div>
+                          <div className="home-page-legrand__content-text home-page-legrand__content-text--medium ">Благодарим вас за активное участие</div>
                           <div className="home-page-legrand__content-text home-page-legrand__content-text--small ">
-                            Акция действует <br/> с 01 июля 2022 года по 30 ноября 2022 года
+                              Следите за новостями и анонсами<br />
+                              о будущих акциях
                           </div>
                         </div>
-                      </a>
+                      </div>
                     </div>
                     <div className="col-md-4">
                         <a href="https://configurator.legrand.ru/configurator/" className="card home-page-card mb-3">

@@ -240,12 +240,12 @@ const NavBar = props => {
                                                   </a>
                                               </Menu.Item>
                                           }
+                                          {/*<Menu.Item key="setting:5" className="menu-subitem" style={menuItemStyle}>*/}
+                                          {/*    <a href="/leto_legrand" style={linkStyle} className="navbar-link">*/}
+                                          {/*        Программа лояльности*/}
+                                          {/*    </a>*/}
+                                          {/*</Menu.Item>*/}
                                           <Menu.Item key="setting:5" className="menu-subitem" style={menuItemStyle}>
-                                              <a href="/leto_legrand" style={linkStyle} className="navbar-link">
-                                                  Программа лояльности
-                                              </a>
-                                          </Menu.Item>
-                                          <Menu.Item key="setting:6" className="menu-subitem" style={menuItemStyle}>
                                               <button onClick={handleLogout}>Выйти</button>
                                           </Menu.Item>
                                       </SubMenu>,
